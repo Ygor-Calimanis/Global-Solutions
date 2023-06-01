@@ -4,6 +4,7 @@ import com.github.ygor_calimanis.global_solution.model.Drone;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Getter
@@ -16,7 +17,7 @@ public class SearchDrone {
 	private int height;
 	private int speed;
 	private int direction;
-	private LocalDateTime dateHour;
+	private LocalDate dateHour;
 
 	public static  SearchDrone toDto(Drone drone){
 		SearchDrone dto = new SearchDrone();
